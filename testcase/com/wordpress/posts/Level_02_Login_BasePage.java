@@ -94,10 +94,10 @@ public class Level_02_Login_BasePage extends BasePage {
 
 	@Test
 	public void Login_07_Valid_Email_Password() {
-		senKeyToElement(driver, "//input[@id='usernameOrEmail']", "phuongnguyenth");
+		senKeyToElement(driver, "//input[@id='usernameOrEmail']", "");
 		clickToElement(driver, "//button[text()='Continue']");
 		sleepInSecond(2);
-		senKeyToElement(driver, "//input[@id='password']", "Phuongminh020503");
+		senKeyToElement(driver, "//input[@id='password']", "");
 		clickToElement(driver, "//button[text()='Log In']");
 		sleepInSecond(3);
 		Assert.assertTrue(isElementDisplayed(driver, "//h1[contains(text(),'Bảng tin')]"));
