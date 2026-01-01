@@ -98,10 +98,10 @@ public class Level_03_Login_BasePage_POM {
 
 	@Test
 	public void Login_07_Valid_Email_Password() {
-		loginPage.inputToUsernameTextbox("phuongnguyenth");
+		loginPage.inputToUsernameTextbox("");
 		loginPage.clickToContinueButton();
 		loginPage.sleepInSecond(2);
-		loginPage.inputToPasswordTextbox("Phuongminh020503");
+		loginPage.inputToPasswordTextbox("");
 		loginPage.clickToLoginButton();
 		loginPage.sleepInSecond(3);
 		dashboardPageObject = new DashboardPageObject(driver);
