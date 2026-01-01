@@ -96,10 +96,10 @@ public class Level01_Login_Repeat_Yourselft {
 	}
 	@Test
 	public void Login_07_Valid_Email_Password() {
-		driver.findElement(usernameTextboxBy).sendKeys("phuongnguyenth");
+		driver.findElement(usernameTextboxBy).sendKeys("");
 		driver.findElement(continueButtonBy).click();
 		sleepInSecond(2);
-		driver.findElement(passwordTextboxBy).sendKeys("Phuongminh020503");
+		driver.findElement(passwordTextboxBy).sendKeys("");
 		driver.findElement(loginButtonBy).click();
 		sleepInSecond(3);
 		Assert.assertTrue(driver.findElement(By.xpath("//h1[contains(text(),'Bảng tin')]")).isDisplayed());
